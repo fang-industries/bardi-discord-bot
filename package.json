@@ -3,5 +3,10 @@
     "@tuya/tuya-connector-nodejs": "^2.1.2",
     "discord.js": "^14.6.0",
     "dotenv": "^16.0.3"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node .",
+    "deploy": "node ./src/deploy.js"
   }
 }
