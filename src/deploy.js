@@ -27,7 +27,7 @@ const cmdFile = readdirSync("./src/commands/").filter((file) =>
 
 // Grab data from SlashCommandBuilder, then throws the output to the array.
 for (const f of cmdFile) {
-  const cmd = `../commands/${f}`;
+  const cmd = require(`./commands/${f}`);
   cmds.push(cmd.data.toJSON());
 }
 
