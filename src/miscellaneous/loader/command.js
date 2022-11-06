@@ -18,7 +18,7 @@ module.exports = async (client) => {
   );
 
   for (const f of cmdFile) {
-    const loc = `../commands/${f}`;
+    const loc = `../../commands/${f}`;
     const cmd = require(loc);
 
     if ("data" in cmd && "execute" in cmd) {
